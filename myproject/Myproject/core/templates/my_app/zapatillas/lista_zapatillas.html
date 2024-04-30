@@ -1,0 +1,23 @@
+{% extends 'base_generic.html' %}
+
+{% block content %}
+<h1>Zapatillas Disponibles</h1>
+<div class="container">
+    {% for producto in productos %}
+    <div class="card" style="width: 18rem; margin: 10px;">
+        <img src="{{ producto.imagen.url }}" class="card-img-top" alt="{{ producto.nombre }}">
+        <div class="card-body">
+            <h5 class="card-title">{{ producto.nombre }} - {{ producto.modelo }}</h5>
+            <p class="card-text">
+                Talla: {{ producto.talla }}<br>
+                Precio: ${{ producto.precio }}<br>
+                Stock: {{ producto.stock }}
+            </p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+    </div>
+    {% empty %}
+    <p>No hay zapatillas disponibles en este momento.</p>
+    {% endfor %}
+</div>
+{% endblock %}

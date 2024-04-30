@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; 
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.btn {
+    margin-right: 10px;
+    margin-bottom: 10px; 
+    display: inline-block;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+}
+
+.formulario {
+    margin-top: 20px;
+}
+
+.formulario input,
+.formulario button {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 10px;
+    }
+
+    .formulario input,
+    .formulario button {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 991px) {
+    h1 {
+        margin-right: 0;
+    }
+
+    .btn {
+        margin-bottom: 5px; 
+    }
+}
+
+.titulo {
+    margin-bottom: 20px;
+    color: black;
+}
+
+.logo {
+    float: left;
+    margin-right: 10px;
+    margin-top: 20px; 
+}
+
+.logo-img {
+    max-width: 180px; 
+    height: auto;
+}
+
+@media (max-width: 767px) {
+    .logo {
+        float: none;
+        margin: 0 auto 10px auto;
+        text-align: center; 
+    }
+
+    .logo-img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: black; /* Cambio de blanco a negro para mejor legibilidad */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 300px; /* Ajuste de ancho para visualización de tarjetas */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-title {
+    font-size: 1.25em; /* Tamaño de fuente para el título de la tarjeta */
+}
+
+.card-text {
+    font-size: 1em; /* Tamaño de fuente para el texto de la tarjeta */
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+}
